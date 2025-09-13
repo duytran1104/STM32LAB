@@ -62,7 +62,8 @@ static void MX_GPIO_Init(void);
   * @retval int
   */
 int main(void)
-{
+{ int status = 0;
+  int count =2 ;
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */

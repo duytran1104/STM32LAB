@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00015554  00000000  00000000  00024580  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00004544  00000000  00000000  00039ad4  2**0
+ 17 .debug_line   00004542  00000000  00000000  00039ad4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00079843  00000000  00000000  0003e018  2**0
+ 18 .debug_str    00079843  00000000  00000000  0003e016  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000b785b  2**0
+ 19 .comment      00000053  00000000  00000000  000b7859  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000d30  00000000  00000000  000b78b0  2**2
+ 20 .debug_frame  00000d30  00000000  00000000  000b78ac  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -82,13 +82,13 @@ Disassembly of section .text:
   * @retval int
   */
 int main(void)
-{int status = 0;
+{ int status = 0;
  800014c:	b580      	push	{r7, lr}
  800014e:	b082      	sub	sp, #8
  8000150:	af00      	add	r7, sp, #0
  8000152:	2300      	movs	r3, #0
  8000154:	607b      	str	r3, [r7, #4]
-int count = 2;
+  int count =2 ;
  8000156:	2302      	movs	r3, #2
  8000158:	603b      	str	r3, [r7, #0]
   /* USER CODE END 1 */
