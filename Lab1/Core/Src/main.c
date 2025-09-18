@@ -19,7 +19,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+uint16_t led[12]={GPIO_PIN_1,GPIO_PIN_2,GPIO_PIN_3,GPIO_PIN_4,GPIO_PIN_5,GPIO_PIN_6,GPIO_PIN_7,GPIO_PIN_8,GPIO_PIN_9,GPIO_PIN_10,GPIO_PIN_11,GPIO_PIN_12};
+void setNumberOnclock(int time){
+	HAL_GPIO_WritePin(GPIOA,led[time],GPIO_PIN_RESET);
+}
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
