@@ -250,12 +250,11 @@ displayClock(hour,minute/5,second/5);
  8000236:	1ad3      	subs	r3, r2, r3
  8000238:	461a      	mov	r2, r3
  800023a:	f7ff ffa9 	bl	8000190 <displayClock>
-  HAL_Delay(50);
- 800023e:	2032      	movs	r0, #50	; 0x32
- 8000240:	f000 f968 	bl	8000514 <HAL_Delay>
+  HAL_Delay(1000);
+ 800023e:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+ 8000242:	f000 f967 	bl	8000514 <HAL_Delay>
   {second++;
- 8000244:	e7c2      	b.n	80001cc <main+0x10>
- 8000246:	bf00      	nop
+ 8000246:	e7c1      	b.n	80001cc <main+0x10>
  8000248:	20000000 	.word	0x20000000
  800024c:	20000048 	.word	0x20000048
  8000250:	20000004 	.word	0x20000004

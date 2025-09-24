@@ -126,7 +126,7 @@ int main(void)
   	hour = 0;
   }
 displayClock(hour,minute/5,second/5);
-  HAL_Delay(50);
+  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
