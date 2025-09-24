@@ -19,9 +19,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-int second = -1;
-int minute = 0;
-int hour = 2;
+int second = 0;
+int minute = 5;
+int hour = 4;
 void clearAllClock (){
 	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_12,GPIO_PIN_SET);
 }
@@ -125,8 +125,8 @@ int main(void)
   if (hour >= 12){
   	hour = 0;
   }
-displayClock(hour,minute/5,second/5);
-  HAL_Delay(1000);
+  displayClock(hour,minute%5,second/5);
+  HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
