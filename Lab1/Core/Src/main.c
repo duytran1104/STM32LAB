@@ -97,10 +97,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {for (int i; i<12;i++){
-		tled(i);
-		HAL_Delay(1000);
-	}
+  {
 }
 
     /* USER CODE END WHILE */
